@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Fast facts for fuller findings. Collections of data for greater convenience and deeper analysis.">
+<meta name="keywords" content="glance, guide, data, table, information, statistics, visual, reference">
+<meta name="author" content="toshlist">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>At a glance - Site style guide</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/ataglance3.css">
+  <link rel="stylesheet" type="text/css" href="../css/toshlist-webfonts.css">
+      <link rel="stylesheet" type="text/css" href="../css/picture-flags-national.css">
+      <link rel="stylesheet" type="text/css" href="../css/specific/img-strips-efl.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="grad-all">
+<header class="container">
+<a href="/ataglance/" class="link-home mar-hor-sm" title="Go to At A Glance homepage"><div class="border-round-100 pad-all-sm shade-33 align-left"><span class="align-left rotate135cc">➜</span></div> <small>AT A GLANCE</small></a>
+</header>
+  <div class="container">
+<div class="primary">
+
+<h1>
+ At A Glance: Site style guide</h1>
+<h2>A demonstration of this site's cosmetic styles and layouts <div class="badge mar-hor-sm hue-champagne-light">BETA</div></h2>
+
+</div>
+</div>
+
+<div id="container" class="shade-33">
+  <div class="container">
+
+  <div class="row">
+        <div class="col-xs-12">
+         <h3>On selected categorised pages</h3>
+         <div class="align-right pad-all-sm mar-ver-md">Or jump to components <a class="mar-ver-sm shade-33 pad-all-md border-round-sm" href="#every">On every page</a></div>
+
+<div class="align-left pad-all-sm mar-ver-md">Jump to <a class="mar-ver-sm shade-33 pad-all-md border-round-sm" href="#customlists1">Custom Ordered lists</a> or <a class="mar-ver-sm shade-33 pad-all-md border-round-sm" href="#customlists2">Custom Unordered lists</a></div>
+</div>
+
+      <div class="col-xs-12">
+
+    <h3 class="text-up3">Grid layouts</h3>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="box">
+<p>The default Bootstrap grid is used. Any set of div(ision)s must be placed within a 'row'-classed div.</div></div>
+  <div class="col-sm-4">
+    <div class="box">
+<p>.col-sm-6</div></div>
+  <div class="col-sm-4">
+    <div class="box">
+<p>.col-sm-3</div></div>
+</div>
+</div>
+      <div class="col-xs-12">
+    <h3 class="text-up3">Content containers</h3>
+<div class="box">
+  <div class="row">
+  <div class="col-sm-4">
+    <p>A content container is any div placed within another grid div (featuring only classes beginning "col-") on a page. The class 'box' should be assigned to all content containers unless they are required to be transparent. CSS classes can be added to the content container to over-ride the default 'box' attributes and/or to specify width, margin, padding, color and borders for the div. The div <em>this</em> text is contained within includes a background color of black (rgba 0,0,0) with 25% opacity, padding of 15 pixels (deemed 'lg' as in large) on all sides and a border radius of 5 pixels on all corners.
+    </div>
+      <div class="col-sm-8">
+
+<h5>A box within a box</h5>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="box">
+<p>This is a content container with 'medium' all-round padding (10 pixels), a background color of black (rgba 0,0,0) with 50% opacity and a 5 pixel border radius. The padding, color and border radius are all set with individual classes.
+</div>
+</div>
+  <div class="col-sm-4">
+    <div class="box">
+<p>This is a content container with the same classes applied as the one before plus a margin of 10 pixels at the top and bottom only to provide sufficient vertical space between it and the containers above and below it at smaller display widths.
+</div>
+</div>
+  <div class="col-sm-4">
+    <div class="box">
+<p>This is a content container with the same classes applied as the one before but with the padding increased by an additional 5 pixels and with a margin of 10 pixels at all sides.
+</div>
+</div>
+</div>
+          
+</div>
+</div>
+</div>
+  </div>
+      <div class="col-sm-6 col-md-4">
+    <h3 class="text-up3">Headings within content containers</h3>
+<div class="box">
+ <h3 class="shade-50">This is the h3 heading, shaded, within a container</h3>
+       <p class="pad-ver-lg">But normally H3 headings are only used above content containers due to the padding and margin applied to the H3 creating a noticeable gap between it and the top of the container. The H3 margin can be over-ruled by applying the 'mar-all-none' class to the heading. In doing so an additional top margin of 15 pixels will be automatically applied to any element subsequent to the heading e.g. a paragraph of text.
+         <h3 class="mar-all-none shade-50">This is the h3 heading, shaded and with 'mar-all-none' applied</h3>
+       <p>And this subsequent paragraph duly has a top margin of 15 pixels applied via the CSS file rather than through a class reference in the HTML. 
+       <h4>This is the h4 heading</h4>
+      <p>h4 headings can appear above or within content containers provided H3 headings also appear before them.
+<h4>Horizontal ruler</h4>
+<hr>
+<p>The horizontal rule can be used to divide sections of content visually. Place it within a full-width column div (col-xs-12) before placing it between different content elements (not including headings and paragraphs).
+</div>
+  </div>
+
+
+      <div class="col-sm-6 col-md-4">
+    <h3 class="text-up3">Custom text headings and labels</h3>
+<div class="box">
+
+  <div class="text-up2 mar-ver-md">This is text classed 'text-up2'</div>
+<p>This has the same effect - increasing the text size. For improved positioning classes to specify width and vertical margin are recommended.</p> 
+
+<div class="title-subject-scaled mar-ver-md"><strong>This is text classed 'title-subject-scaled'</strong></div>
+<p>This class scales the text down significantly at smaller window/screen widths and may be used for labelling in the cells of large tables with many columns.</p> 
+
+<div class="title-subject-scaled mar-ver-md text-ow">This is text classed 'title-subject-scaled' and 'text-ow'</div>
+<p>As above but with an additional class to specify the font as 'Oswald' and in uppercase.</p> 
+
+<div class="subject-title mar-ver-md">This is text classed 'subject-title'</div>
+<p>This is applied to the titles of subjects in lists or tables e.g. an individual person or object.</p> 
+</div>
+  </div>
+
+
+      <div class="col-sm-6 col-md-4">
+<h3 class="text-up3">Default lists and additional text formats</h3>
+<div class="box">
+  <div class="row">
+     <div class="col-xs-6 col-sm-4 shade-25">
+         <h5 class="mar-all-none pad-ver-md">Unordered list</h5>
+       <ul class="mar-ver-md">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+  </div>
+   <div class="col-xs-6 col-sm-4">
+              <h5 class="mar-all-none pad-ver-md">Ordered list</h5>
+       <ol class="mar-ver-md">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ol>
+</div>
+  <div class="col-xs-6 col-sm-4 shade-25">
+              <h5 class="mar-all-none pad-ver-md">Descriptive list<br/><small>(no indicator by default)</small></h5>
+       <dl class="mar-ver-md">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </dl>
+  </div>
+
+     <div class="col-xs-12 col-sm-6">
+         <h5 class="pad-ver-sm">Superscript</h5>
+       <p class="mar-ver-md">Superscript is set<br/> to <sup>10 pixels</sup> and <sup>all caps</sup></p>
+
+        <h5 class="mar-all-none">Subscript</h5>
+       <p class="mar-ver-md">Subscript is set<br/> to <sub>10 pixels</sub></p>
+  </div>
+   <div class="col-xs-12 col-sm-6">
+              <h5 class="pad-ver-sm">Meaningful coloured text</h5>
+  <p class="pad-all-md de-crease alert shade-50">To define a brief alert message or significantly low quantity.</p>
+
+</div>
+</div>
+
+  </div>
+
+ </div>
+
+
+  <div class="col-xs-12">
+    <h3 class="text-up3">Positioning and alignment</h3>
+<div class="box align-left width-100">
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+
+  <code>pos-rel</code> to force relative positioning 
+</div>
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+
+  <code>align-vmid</code> to force vertical centred alignment
+  </div>
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+
+  <code>align-vtop</code> to force vertical top alignment
+  </div>
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+
+  <code>align-vbot</code> to force vertical bottom alignment
+  </div>
+</div>
+</div>
+<!--
+  <div class="col-xs-12">
+    <h3 class="text-up3">Colours</h3>
+<div class="box align-left width-100">
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+              <h5 class="mar-all-none">Ordered list</h5>
+
+  <p class="pad-ver-md decrease de-crease alert">Decrease / Alert</p>
+</div>
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+
+  <code>align-vmid</code> to force vertical centred alignment
+  </div>
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+
+  <code>align-vtop</code> to force vertical top alignment
+  </div>
+     <div class="col-xs-12 col-sm-6 col-md-3 pad-all-xs">
+
+  <code>align-vbot</code> to force vertical bottom alignment
+  </div>
+</div>
+</div>
+-->
+
+
+  <div class="col-xs-12">
+    <h3 class="text-up3">Pictures and icons</h3>
+<div class="shade-50 border-round-sm pad-all-lg align-left width-100">
+<p>Note: In this container a separate container is provided for each element example below. As a result the outer container is floated with a specified width of 100%.</p>
+
+<div class="col-xs-12 col-sm-4 col-md-2 pad-hor-md">
+  <h5 >Picture subject</h5>
+  <div class="picture-subject mar-ver-sm align-center pad-ver-md">  <small>Minimum height: 96px;<br/>Maximum width: 150px.</small>
+</div>
+<p class="pad-ver-md">The class for pictures provides a background translucent image of a pale silhouetted figure by default. A maximum width of 150 pixels is set for all picture classes.</p>
+
+
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-2 hue-grey-05 pad-hor-md">
+ <h5>Picture subject small</h5>  
+ <div class="picture-subject-small mar-ver-sm align-inline align-left"></div> 
+ <div class="picture-subject-small mar-all-sm border-round-100 align-left"></div>
+
+   <small class="align-left mar-ver-sm">Minimum height: 48px;<br/>Maximum width: 48px.</small>
+
+<p class="align-left pad-ver-md">Provides a container for a picture at 48 pixels square. A small vertical margin is recommended for any pictures between a heading and text.</p> 
+
+<p class="align-left pad-ver-md">As the dimensions are square the fully round border class can be applied if desired.</p>
+<p class="align-left pad-ver-md">Inline alignment and floatation is required to position small pictures alongside each other and above other elements e.g. paragraphs.</p>
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-2 pad-hor-md">
+  <h5>Picture subject combos</h5>
+  <div class="align-left width-100">
+  <div class="picture-subject picture-subject-med mar-all-none align-left pad-all-sm">1</div>
+  <div class="picture-subject-small picture-subject-med mar-hor-sm align-left pad-all-sm">2</div>
+  <div class="picture-subject-small picture-subject-tall-xs-up align-left pad-all-xs"><small>3</small></div> 
+</div>
+<ol class="align-left pad-ver-md">
+  <li><small>picture-subject + picture-subject-med</small></li>
+  <li><small>picture-subject-small + picture-subject-med</small></li>
+  <li><small>picture-subject-small + picture-subject-tall-xs-up</small></li>
+</ol>
+
+<p class="align-left">Combinations of classes for vertically rectangular pictures. Alter the background position of images when applying them to the CSS for optimum display.</p>
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-md-2 hue-grey-05 pad-hor-md">
+  <h5>Picture subject inline rectangular</h5>
+    <div class="pic-subject-inline-rect mar-all-none hue-grey-05"></div>   
+    <div class="pic-subject-inline-rect mar-hor-sm hue-grey-05"></div>   
+    <div class="pic-subject-inline-rect mar-all-none hue-grey-05"></div>
+
+<p class="pad-ver-sm">This size is for icons and identity-based but inconsistently shaped images that can be displayed at a smaller size such as national flags.</p>
+<h5>Picture subject inline rectangular extra small</h5>
+    <div class="pic-subject-inline-rect-xs mar-all-none hue-grey-05"></div>   
+    <div class="pic-subject-inline-rect-xs mar-hor-sm hue-grey-05"></div>   
+    <div class="pic-subject-inline-rect-xs mar-all-none hue-grey-05"></div>
+
+<p class="pad-ver-md">This size is for icons and identity-based images that can be displayed at a smaller size within sqaure dimensions.</p>
+
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-2 pad-hor-md">
+
+  <h5>Picture subject inline rect. variant</h5>
+
+    <div class="pic-subject-inline-rect mar-all-none hue-grey-05"></div>
+<span class="text-rbcn mar-hor-sm">Enlarged text</span>
+    <div class="pic-subject-inline-rect mar-all-none hue-grey-05"></div>
+    <p class="pad-ver-sm">
+      Example use: Football club name and the flag of their country adjacent. The text is enlarged provided it is within a span classed as 'text'rbcn' after the inline rectangular picture class.
+    </p>   
+
+  <h5>Picture subject tall</h5>
+    <div class="pic-subject-tall mar-all-none hue-grey-05"></div>   
+      <p class="pad-ver-md">
+        Original class for vertically rectangular pictures (25 x 55).
+      </p>   
+
+</div>
+<div class="col-xs-12 col-sm-4 col-md-2 pad-hor-md">
+
+  <h5>Icons</h5>
+
+   
+<!--
+  <h5>Alert icon  <div class="title-alert"></div>
+</h5>
+    <p>
+      For alerts or warning messages.
+    </p>   
+-->
+</div>
+  </div>
+</div>
+
+</div><!-- closes row --><div class="row">
+<div class="col-xs-12">  
+    <h3 id="customlists1" class="text-up3">Custom Ordered lists</h3>
+      <h4>Disc lists</h4>
+            <ul class="mar-ver-md">
+        <li class="list-discs">
+      <div class="disc">                
+      <div class="disc-content">
+        <h3 class="mar-all-sm">Disc 1 heading</h3>
+          <h4 class="mar-all-md">Used when a picture relating to each subject provides both informative and cosmetic value on the page.</h4>   
+            <ol class="mar-ver-sm">
+               <li>
+                  <div class="picture-subject-med align-right border-round-100 photo-mp-wa-021"></div> 
+                    <div class="subject-title">Subject </div>
+                      <span>Additional details<br/>
+              </li>
+               <li>
+                   <div class="picture-subject-med align-right border-round-100 photo-mp-wa-021"></div> 
+                    <div class="subject-title">Subject with icon <div class="pic-subject-inline-rect align-vmid flag-036"></div></div>
+                       <span>Additional details<br/>
+              </li>
+              <li>
+                  <div class="picture-subject-med align-right border-round-100 photo-mp-wa-021"></div> 
+                    <div class="subject-title">Subject </div>
+                      <span>Additional details with icon <div class="pic-subject-inline-rect align-vmid flag-036"></div><br/>
+             </li>
+           </ol>
+      </div>
+      </div><!-- end disc-->
+        </li>
+         <li class="list-discs">
+      <div class="disc">                
+      <div class="disc-content">
+        <h3 class="mar-all-sm">Disc 2 heading</h3>
+          <h4 class="mar-all-md">Examples of this 'discs' list format can be seen on the <a href="/ataglance">homepage</a>.</h4>   
+            <ol class="mar-ver-sm">
+               <li>
+                  <div class="picture-subject-med align-right border-round-100 photo-mp-wa-021"></div> 
+                    <div class="subject-title">Subject </div>
+                      <span>Additional details<br/>
+              </li>
+               <li>
+                   <div class="picture-subject-med align-right border-round-100 photo-mp-wa-021"></div> 
+                    <div class="subject-title">Subject with icon <div class="pic-subject-inline-rect align-vmid flag-036"></div></div>
+                       <span>Additional details<br/>
+              </li>
+              <li>
+                    <div class="picture-subject-med align-right border-round-100 photo-mp-wa-021"></div> 
+                      <div class="subject-title">Subject with badge <span class="badge hue-grey mar-hor-xs">Label</span></div>
+                        <span>Additional details with icon <div class="pic-subject-inline-rect align-vmid flag-036"></div><br/>
+             </li>
+           </ol>
+      </div>
+      </div><!-- end disc-->
+        </li>
+         <li class="list-discs">
+      <div class="disc">                
+      <div class="disc-content">
+        <h3 class="mar-all-sm">Disc 3 heading</h3>
+          <h4 class="mar-all-md">Used to highlight a specific figure for each list item</h4>   
+            <ol class="mar-ver-sm">
+               <li>
+<span class="fig-xl box-light align-right hue-champagne-light text-up3">5</span>
+                    <div class="subject-title">Item One (with badge) <span class="badge hue-grey mar-hor-xs">Badge</span></div>
+                      <span>The specific figure for the first list item is within a highlighted container.<br/>
+              </li>
+               <li>
+<span class="fig-xl box-light align-right text-up3">4</span>
+                    <div class="subject-title">Item Two with icon <div class="pic-subject-inline-rect align-vmid flag-036"></div></div>
+                       <span>The specific figures text size is enlarged by 200% using a specific class.<br/>
+              </li>
+              <li>
+<span class="fig-xl box-light align-right text-up3">4</span>
+                      <div class="subject-title">Item Three</div>
+                        <span>Additional details with icon <div class="pic-subject-inline-rect align-vmid flag-036"></div><br/>
+                          <small>Additional text within a 'small' tag can be added if desired.</small>
+             </li>
+           </ol>
+      </div>
+      </div><!-- end disc-->
+        </li>
+          </ul>
+
+
+    <div class="col-xs-6 col-md-3 lists-lead">
+      <h3 class="mar-all-md">Top 3 people or things</h3>
+    <ol>
+      <li class="shade-50 border-round-sm">
+        <div class="picture-subject-small border-round-100 align-right monarch-44"></div> 
+        <div class="subject-title">Subject</div>
+        Additional details e.g. the date, time, location.
+      </li>
+      <li class="shade-50 border-round-sm">
+        <div class="picture-subject-small border-round-100 align-right monarch-46"></div> 
+        <div class="subject-title">Subject</div>
+        An ordered list is used primarily for chronological lists but also recommended for lengthy ranked lists whether they include a rank 'score' or equivalent figure per entry or not.
+      </li>
+      <li class="shade-50 border-round-sm">
+        <div class="picture-subject-small border-round-100 align-right monarch-43"></div> 
+        <div class="subject-title">Subject</div>
+        Additional details
+      </li>
+    </ol>
+  </div>
+
+    <div class="col-xs-6 col-md-3 lists-lead">
+      <h3 class="mar-all-md">Ranked descriptive list</h3>
+    <dl class="mar-all-xs">
+          <li class="shade-50 border-round-sm">
+  <span class="fig-xl box-light align-right text-up3 hue-champagne-light">3</span>  
+  <div class="subject-title pad-hor-sm">Subject</div> 
+  <div class="pad-hor-sm">ADDITIONAL DETAIL WITH ICON <div class="pic-subject-inline-rect align-vmid flag-036"></div> <br/>  
+  <span class="text-tanzanite-light">For brief ranked lists the numerical sequence is not required.</span></div>
+</li>
+        <li class="shade-50 border-round-sm">
+<span class="fig-xl box-light align-right text-up3">2</span>  
+<div class="subject-title pad-hor-sm">Subject</div> 
+<div class="pad-hor-sm">ADDITIONAL DETAIL <div class="pic-subject-inline-rect align-vmid flag-036"></div> <br/>  
+Additional details</div>
+
+  <div class="mar-ver-sm"> <div class="subject-title pad-hor-sm">Multiple subject</div>   
+  <div class="pad-hor-sm">ADDITIONAL DETAIL <div class="pic-subject-inline-rect flag-ice"></div>  <br/>  
+  <small><span class="text-champagne-light">For multiple entries within one list item e.g. two or more subjects of equal rank, simply add a container with a small vertical margin (mar-ver-sm) below the initial list item contents.</span></small></div>
+  </div>
+  </li>
+       <li class="shade-50 border-round-sm">
+<span class="fig-xl box-light align-right">1</span>  
+<div class="subject-title pad-hor-sm">Subject</div> 
+<div class="pad-hor-sm"><div class="pic-subject-inline-rect align-vmid flag-036 hue-green-22"></div> ADDITIONAL DETAIL <br/> In this example the icon above has an additional class applied to provide a translucent background color.</div></li>
+
+    </dl>
+</div>
+
+
+    <div class="col-xs-6 col-md-3 lists-lead"> 
+      <div class="shade-50 border-round-sm pad-all-sm mar-ver-md">
+      <h3 class="mar-all-md">Top 3 people or things <small> - contained variation </small></h3>
+    <ol class="mar-all-xs"><li>  
+      <div class="picture-subject-small align-right border-round-100 leader-036"></div>  
+      <div class="subject-title">Subject <div class="pic-subject-inline-rect align-vmid flag-036"></div></div>ADDITIONAL DETAIL  <div class="pic-subject-inline-rect align-vmid flag-036"></div> <br/>  Additional details</li>
+      <li> 
+        <div class="picture-subject-small align-right border-round-100 leader-076"></div>  
+        <div class="subject-title">Subject <div class="pic-subject-inline-rect align-vmid flag-036"></div></div> Additional details <div class="pic-subject-inline-rect align-vmid flag-036"></div> <br/> ADDITIONAL DETAIL  </li>
+        <li> 
+          <div class="picture-subject-small align-right border-round-100 leader-188"></div>  
+          <div class="subject-title">Subject <div class="pic-subject-inline-rect align-vmid flag-036"></div></div>ADDITIONAL DETAIL  <div class="pic-subject-inline-rect align-vmid flag-036"></div> <br/>  Additional details</li>
+
+    </ol>
+   </div>
+   </div>
+
+
+ <div class="col-xs-6 col-md-3 lists-lead"> 
+      <div class="align-left width-100 shade-50 border-round-sm pad-all-sm mar-ver-md">
+   <h3 class="mar-all-md">Top 3 people or things <small> - contained variation </small></h3>
+    <ol>
+      <li><span class="fig-large align-right mar-hor-xs">100.1</span>
+        <div class="subject-title mar-ver-xs">Subject* <div class="pic-subject-inline-rect align-vmid flag-145"></div>
+      </div> Note that for more widely varying figures the font for figures is 'Oswald' and there is no visible container.
+
+      </li>   
+      <li><span class="fig-large align-right mar-hor-xs">49.9</span>
+        <div class="subject-title mar-ver-xs">
+        Subject <div class="pic-subject-inline-rect align-vmid flag-031"></div>
+      </div> Additional details
+      </li>
+
+      <li><span class="fig-large align-right mar-hor-xs">0.01</span>
+        <div class="subject-title mar-ver-xs">
+        Subject <div class="pic-subject-inline-rect align-vmid flag-036"></div>
+      </div> Additional details
+      </li>
+
+
+    </ol>
+   </div><small class="align-right pad-hor-sm mar-all-xs">*Any caveat or qualifier is placed directly below outside the content container</small>
+   </div>
+
+</div>
+
+<div class="col-xs-12">
+<h3 id="customlists2" class="text-up3">Custom Unordered lists</h3>
+
+<p class="width-50 mar-hor-sm">The unordered list with the 'boxes' class applied and any containers within list items can include any margin or padding class for improved positioning. If a descriptive summary of the list contents is required use this paragraph within its medium-padded div.
+  <p class="width-50 mar-hor-sm">This UL format is useful as it allows irregular heights among list items without the 'nesting' effect of the Bootstrap-based column containment. The disadvantage is that list items cannot be fully justified in alignment satisfactorily and so a slight gap will persist at the right hand side of the list rows as they adjust to the window or screen width.
+</div>
+    <ul class="boxes mar-all-md">
+
+  
+  <li>  
+    <div class="mar-ver-sm pad-hor-md">
+      <div class="picture-subject-small-rect picture-subject-small align-right flag-001"></div> 
+  <div class="text-ow">
+Box title
+  </div>
+  <div class="subject-title mar-ver-xs">
+    Box subject title
+    </div> 
+  </div>
+
+    <div class="mar-all-md">
+      <div class="col-xs-3 pad-all-none mar-ver-sm">
+    <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 1</small><br/> 
+<span class="fig-large">652.</span>86 
+</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="suffix-million hue-grey-05 border-round-sm pad-all-sm"><small>Label 2</small><br/> 
+<span class="fig-large">32.</span>56</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 3</small><br/> 
+<span class="fig-large">49.</span>9</div>
+  </div>
+
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 4</small><br/>  
+<span class="fig-large">171</span>  </div>
+</div>
+</div>
+</li>
+<li>  
+    <div class="mar-ver-sm pad-hor-md">
+      <div class="picture-subject-small-rect picture-subject-small align-right flag-001"></div> 
+  <div class="text-ow">
+Box title
+  </div>
+  <div class="subject-title mar-ver-xs">
+    <small>Box subject title within small tags</small>
+    </div> 
+  </div>
+
+    <div class="mar-all-md">
+     
+<div class="col-xs-12 pad-all-none mar-ver-sm">
+  <div class="suffix-million hue-grey-05 border-round-sm pad-all-sm hue-spinel">Figure suffixes<br/>  
+<small>The class 'suffix-million' is applied to the container of the label and figure, providing a capital M after the figure if desired e.g. 100.</small>  </div>
+</div>
+</div>
+</li>
+<li>  
+    <div class="mar-ver-sm pad-hor-md">
+      <div class="picture-subject-small-rect picture-subject-small align-right flag-001"></div> 
+  <div class="text-ow">
+Box title
+  </div>
+  <div class="subject-title-sm mar-ver-sm">
+    Box subject title small
+    </div> 
+  </div>
+
+    <div class="mar-all-md">
+      <div class="col-xs-3 pad-all-none mar-ver-sm">
+    <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 1</small><br/> 
+<span class="fig-large">652.</span>86 
+</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="suffix-million hue-grey-05 border-round-sm pad-all-sm"><small>Label 2</small><br/> 
+<span class="fig-large">32.</span>56</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 3</small><br/> 
+<span class="fig-large">49.</span>9</div>
+  </div>
+
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 4</small><br/>  
+<span class="fig-large">171</span>  </div>
+</div>
+</div>
+</li>
+<li>  
+    <div class="mar-ver-sm pad-hor-md">
+      <div class="picture-subject-small-rect picture-subject-small align-right flag-001"></div> 
+  <div class="text-ow">
+Box title
+  </div>
+  <div class="subject-title mar-ver-sm">
+    Box subject title
+    </div> 
+  </div>
+
+    <div class="mar-all-md">
+      <div class="col-xs-3 pad-all-none mar-ver-sm">
+    <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 1</small><br/> 
+<span class="fig-large">652.</span>86 
+</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="suffix-million hue-grey-05 border-round-sm pad-all-sm"><small>Label 2</small><br/> 
+<span class="fig-large">32.</span>56</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 3</small><br/> 
+<span class="fig-large">49.</span>9</div>
+  </div>
+
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 4</small><br/>  
+<span class="fig-large">171</span>  </div>
+</div>
+</div>
+</li>
+<li>  
+    <div class="mar-ver-sm pad-hor-md">
+      <div class="picture-subject-small-rect picture-subject-small align-right flag-001"></div> 
+  <div class="text-ow">
+Box title
+  </div>
+  <div class="subject-title-morph mar-ver-sm">
+    Box subject title
+    </div> 
+  </div>
+
+    <div class="mar-all-md">
+      <div class="col-xs-3 pad-all-none mar-ver-sm">
+    <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 1</small><br/> 
+<span class="fig-large">652.</span>86 
+</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="suffix-million hue-grey-05 border-round-sm pad-all-sm"><small>Label 2</small><br/> 
+<span class="fig-large">32.</span>56</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 3</small><br/> 
+<span class="fig-large">49.</span>9</div>
+  </div>
+
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 4</small><br/>  
+<span class="fig-large">171</span>  </div>
+</div>
+</div>
+</li>
+<li>  
+    <div class="mar-ver-sm pad-hor-md">
+      <div class="picture-subject-small-rect picture-subject-small border-round-100 align-right flag-001"></div> 
+  <div class="text-ow">
+Box title
+  </div>
+  <div class="mar-ver-sm">
+    In this example the class 'border-round-100' has been applied to the picture on the right.
+    </div> 
+  </div>
+
+    <div class="mar-all-md">
+      <div class="col-xs-3 pad-all-none mar-ver-sm">
+    <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 1</small><br/> 
+<span class="fig-large">652.</span>86 
+</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="suffix-million hue-grey-05 border-round-sm pad-all-sm"><small>Label 2</small><br/> 
+<span class="fig-large">32.</span>56</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 3</small><br/> 
+<span class="fig-large">49.</span>9</div>
+  </div>
+
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 4</small><br/>  
+<span class="fig-large">171</span>  </div>
+</div>
+</div>
+</li>
+<li>  
+    <div class="mar-ver-sm pad-hor-md">
+  <div class="text-ow">
+Box title
+  </div>
+  </div>
+
+    <div class="mar-all-md">
+      <div class="col-xs-3 pad-all-none mar-ver-sm align-center">
+    <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 1</small><br/> 
+      <div class="picture-subject-small-rect picture-subject-small border-round-100 align-center flag-001"></div> 
+
+</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 2</small><br/> 
+      <div class="picture-subject-small-rect picture-subject-small border-round-100 align-center flag-001"></div> 
+</div>
+</div>
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm"><small>Label 3</small><br/> 
+      <div class="picture-subject-small-rect picture-subject-small border-round-100 align-center flag-001"></div> 
+</div>
+  </div>
+
+<div class="col-xs-3 pad-all-none mar-ver-sm">
+  <div class="hue-grey-05 border-round-sm pad-all-sm align-left width-100 text-right"><small>Label 4</small><br/>  
+      <div class="picture-subject-small-rect picture-subject-small border-round-100 align-right flag-001"></div> 
+ </div>
+</div>
+</li>
+</ul>
+<hr>
+    <div class="col-xs-12">
+         <h3 id="every" class="text-up3">On every categorised page</h3>
+
+
+    <div class="row">  
+      <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="pad-all-sm">
+    <h3>Body</h3>
+    Unless styled otherwise text is displayed in #ccc (Gray 80) in the webfont <a href="https://fonts.google.com/specimen/Roboto+Condensed">Roboto Condensed</a>. Unless styled otherwise text links are coloured #6cc are underlined when hovered over. A class for a background colour is applied to the page according to which category the page falls under. A background image is applied to the body positioned absolutely from the top right.
+  </div>
+ </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="pad-all-sm">
+    <h3>Header</h3>
+    Aside from the homepage the header on every page contains only a link back to the homepage. This link contains a <a href="https://www.compart.com/en/unicode/U+279C">heavy round-tipped rightwards arrow</a> (Unicode character 'U+279C') rotated with a CSS class by 135 degrees anti-clockwise within a container with a fully-rounded border. This is followed by the title 'At A Glance' displayed white with an opacity of .75 and in the webfont 'Tex Gyre Heros' provided from the toshlist.org <a href="http://www.toshlist.org/webfonts/">webfonts directory</a>.
+  </div>
+ </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="pad-all-sm">
+    <h3>Footer</h3>
+    The footer on every page provides a link to the site creators, the Toshlist.org homepage and a link back to the top of the page (again using the <a href="https://www.compart.com/en/unicode/U+279C">heavy round-tipped rightwards arrow</a> (Unicode character 'U+279C') but rotated with a CSS class by 90 degrees counter-clockwise. The footer has a minimum height of 200 pixels and is coloured black with an opacity of .85.
+  </div>
+ </div>
+
+
+    <div class="col-xs-12">
+      <div class="primary pad-all-sm shade-33">
+        <h3><h1>The primary container</h1></h3>
+        <span><h2>This appears on every page in a container below the header and contains the H1 and H2 headings <div class="badge mar-hor-sm hue-champagne-light">BADGE</div></h2></span> 
+      </div>
+     
+    </div>
+</div><!-- end of row -->
+
+   <small>Source: <a href="#">Website or webpage link</a> (usually to the appropriate page on Wikipedia)</small>
+ 
+</div>
+ </div>
+    </div>
+      </div>
+  </div> <!-- end container -->
+  <footer>
+    <div class="container">
+<div class="col-sm-6">
+  <div class="align-left text-left">
+<h3>At A Glance</h3>
+<p>A <a href="http://ghostfood.tv">Ghost Food</a> production for <a href="http://toshlist.org">Toshlist.org</a>
+</p>
+  </div>
+  </div>
+  <div class="col-sm-6">
+<a href="#" class="align-right top rotate90cc border-round-100" title="Go to top of page">&#10140;</a>
+
+  </div>
+</div>
+  </footer>
+</body>
+</html>
